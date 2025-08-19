@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from torchvision.datasets import UCF101
 from torchvision.transforms import ToTensor
-
+from ..config.load_config import load_config
 
 def unzip_dataset(zip_file_path, extract_to_path):
     """Unzips a file and handles directory creation."""
@@ -82,9 +82,10 @@ if __name__ == '__main__':
     # This block is for testing the script directly.
 
    
+   # These are just examples, please load your examples below
     zip_path = '../data/ucf101_video.zip'
     extract_path = '../data/extracted_files/'
-    annotation_path = os.path.join(extract_path, 'ucf101_split_1_train.txt') # Example annotation path
+    annotation_path = '../data/extracted_files/UCF-One Video/Annotation'
     
    
     # unzip_dataset(zip_path, extract_path) # Uncomment to run this part

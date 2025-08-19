@@ -1,0 +1,5 @@
+
+dataset:
+  zip_path: 'your_zip_path'
+  extract_path: 'your_extract_path'
+  annot_path: 'your_annot_path' #contained within the extract path
